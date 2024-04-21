@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="header">
+      <label class="switch">
+        <input id="player" type="checkbox" onclick="setPlayer()" />
+        <span class="slider round"></span>
+      </label>
+      <p id="youAre">You are O</p>
+      <div class="win-count">
+        <p>System win <span class="syswin"></span></p>
+        <p>Human win <span class="humanwin"></span></p>
+      </div>
+      <p class="draw">Tie Count <span class="tieCount"></span></p>
+    </div>
+
+    <table>
+      <tr>
+        <td class="cell" id="0"></td>
+        <td class="cell" id="1"></td>
+        <td class="cell" id="2"></td>
+      </tr>
+
+      <tr>
+        <td class="cell" id="3"></td>
+        <td class="cell" id="4"></td>
+        <td class="cell" id="5"></td>
+      </tr>
+      <tr>
+        <td class="cell" id="6"></td>
+        <td class="cell" id="7"></td>
+        <td class="cell" id="8"></td>
+      </tr>
+    </table>
+    <div class="endgame">
+      <p class="whowin"></p>
+    </div>
+    <div class="footer">
+      <button id="undo" onclick="undo()">Undo</button>
+      <button id="redo" onclick="redo()">Redo</button>
+      <button class="replay" onclick="reset()">Reset</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
