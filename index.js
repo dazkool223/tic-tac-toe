@@ -74,9 +74,9 @@ function setBoard(board) {
   }
 }
 
-let undoStack = [];
+// let undoStack = [];
 function undo() {
-  undoStack.push(boardState.pop());
+  // undoStack.push(boardState.pop());
   if (currentMove > 0) {
     currentMove--;
     setBoard(boardState[currentMove]);
